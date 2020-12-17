@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BattleShip</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <div id="content">
+      <div class="header">
+        <h1>BattleShip</h1>
+        <div class="rules">
+          <p>Rules:</p>
+          <ul>
+            <li>> Drag ships to your board</li>
+            <li>> Click 'Start Game'</li>
+            <li>> Destroy all enemy ships to win</li>
+          </ul>
+        </div>
+
+        <button>Start Game</button>
+      </div>
+      <div class="main-container">
+        <div class="game-setup">
+          <h2>Drag Ships</h2>
+          <button id="rotate-ships">Rotate Ships</button>
+          <div class="user-ship-container">
+            <div
+              class="shipCell destroyer-container"
+              draggable="true"
+              data-id="0"
+            >
+              <div id="destroyer-0"></div>
+              <div id="destroyer-1"></div>
+            </div>
+            <div
+              class="shipCell submarine-container"
+              draggable="true"
+              data-id="1"
+            >
+              <div id="submarine-0"></div>
+              <div id="submarine-1"></div>
+              <div id="submarine-2"></div>
+            </div>
+            <div
+              class="shipCell cruiser-container"
+              draggable="true"
+              data-id="2"
+            >
+              <div id="cruiser-0"></div>
+              <div id="cruiser-1"></div>
+              <div id="cruiser-2"></div>
+            </div>
+            <div
+              class="shipCell battleship-container"
+              draggable="true"
+              data-id="3"
+            >
+              <div id="battleship-0"></div>
+              <div id="battleship-1"></div>
+              <div id="battleship-2"></div>
+              <div id="battleship-3"></div>
+            </div>
+            <div
+              class="shipCell carrier-container"
+              draggable="true"
+              data-id="4"
+            >
+              <div id="carrier-0"></div>
+              <div id="carrier-1"></div>
+              <div id="carrier-2"></div>
+              <div id="carrier-3"></div>
+              <div id="carrier-4"></div>
+            </div>
+          </div>
+        </div>
+        <div class="gameboard">
+          <h2>Human</h2>
+          <div class="gameboard-container human-gameboard"></div>
+        </div>
+
+        <div class="gameboard">
+          <h2>Computer</h2>
+          <div class="gameboard-container computer-gameboard inactive"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./main.js"></script>
+</html>
